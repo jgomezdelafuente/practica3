@@ -36,7 +36,7 @@ async def validation_exception_handler(
 ) -> JSONResponse:
     logger.warning("Error de validación en %s: %s", request.url.path, exc.errors())
     return JSONResponse(
-        status_code=status.HTTP_400_BAD_REQUEST,
+        status_code=status.HTTP_422_BAD_REQUEST,
         content={
             "detail": "Bad Request",
             "errors": exc.errors()
