@@ -1,0 +1,8 @@
+practica-fastapi/
+├── app/
+│   ├── main.py
+│   ├── database.py --> prepara la conexión con Mongo
+│   ├── models.py --> Define como será un estudiante (pydantic)
+│   └── requirements.txt
+├── Dockerfile
+└── docker-compose.yml
